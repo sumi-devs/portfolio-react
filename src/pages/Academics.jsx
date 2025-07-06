@@ -10,7 +10,7 @@ function Academics() {
       <Navbar />
 
       <div className="grid-container-proj">
-        {'PROJECTS&'.split('').map((c, i) => <Letter key={i} char={c} />)}
+        {'PROJECTS &'.split('').map((c, i) => <Letter key={i} char={c} />)}
       </div>
 
       <div className="grid-container-cert">
