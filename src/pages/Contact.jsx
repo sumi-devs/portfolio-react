@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 import { useState, useEffect } from 'react';
 import { db } from '../firebase';
-import { collection, addDoc, onSnapshot } from 'firebase/firestore';
+import { collection, addDoc, onSnapshot, serverTimestamp } from 'firebase/firestore';
 import Letter from '../components/Letter';
 import '../assets/css/contact.css';
 
