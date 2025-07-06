@@ -61,7 +61,6 @@ function Academics() {
           </p>
           <br />
           <Carousel images={[
-            'pictures/portfolio5.jpg',
             'pictures/portfolio1.jpg',
             'pictures/portfolio3.jpg',
             'pictures/portfolio4.jpg',
