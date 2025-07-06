@@ -5,7 +5,7 @@ import { collection, addDoc, onSnapshot } from 'firebase/firestore';
 import Letter from '../components/Letter';
 import '../assets/css/contact.css';
 
-function Contact({ toggleTheme, theme }) {
+function Contact() {
   const colors = ['#e76f51', '#2a9d8f', '#264653', '#f4a261', '#8338ec', '#ff006e'];
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
@@ -31,7 +31,7 @@ function Contact({ toggleTheme, theme }) {
       <Navbar />
 
       <div className="grid-container-contact">
-        {"LET'SCONNECT!".split('').map((c, i) => <Letter key={i} char={c} />)}
+        {"LET'S CONNECT!".split('').map((c, i) => <Letter key={i} char={c} />)}
       </div>
 
       <div className="contact">
