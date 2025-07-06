@@ -279,9 +279,10 @@ nav a {
 }
 
 .tech-stack {
-    margin: 50px 50px 50px 50px;
+    margin: 0px 50px 50px 50px;
     border: 1px solid #0f0f0f;
-    padding: 10px;
+    padding: 20px;
+    font-size: large;
 }
 
 .tech-stack:hover {
