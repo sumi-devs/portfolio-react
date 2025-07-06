@@ -1,0 +1,88 @@
+import Navbar from '../components/Navbar';
+import Letter from '../components/Letter';
+import '../assets/css/portfolio.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
+function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+
+      <div className="grid-container">
+        {'HI GUYS, MY NAME IS SUMITHRA'.split('').map((c, i) => <Letter key={i} char={c} />)}
+      </div>
+
+      <div className="grid-container2">
+        {'AND WELCOME TO MY PORTFOLIO!'.split('').map((c, i) => <Letter key={i} char={c} />)}
+      </div>
+
+      <div className="intro">
+        <div className="professional">
+          <p>
+            I am currently a <span className="aboutspan">Computer Science and Engineering</span> undergraduate student.
+            <br /><br />
+            My interests lie in <span className="aboutspan">full-stack development</span> — I particularly enjoy designing user-friendly and creative interfaces and bringing ideas to life through front-end work (Psst! Try mousing over the letters above!).
+            <br /><br />
+            Beyond that, I'm fascinated by <span className="aboutspan">computer vision</span>, <span className="aboutspan">machine learning</span>, and <span className="aboutspan">cloud computing</span>, and I love exploring how these fields create real-world impact.
+            <br /><br />
+            I consider myself a quick and curious learner, always eager to dive deep into new topics and build projects that are both innovative and fun.
+          </p>
+        </div>
+
+        <div className="personal">
+          <p>
+            Outside the world of computer science, I find joy in <span className="aboutspan">reading books</span> and <span className="aboutspan">watching movies</span>. I'm always on the lookout for a good story, whether it's through pages or on screen.
+            <br /><br />
+            I particularly enjoy the works of Toni Morrison, Han Kang, Park Chan Wook, Adoor Gopalakrishnan, and David Fincher to name a few. I also love spending time <span className="aboutspan">drawing</span> and <span className="aboutspan">crocheting</span>, activities that let me slow down and create with my hands.
+            <br /><br />
+            If you have a favorite book or film, I'd love to hear about it — let's share recommendations and discover new favorites together!
+          </p>
+          <a href="/contact">
+            <div className="button">SOCIALS</div>
+          </a>
+        </div>
+      </div>
+
+      <div className="education" data-aos="fade-up">
+        <div className="picture">
+          <img src="pictures/img1.jpg" alt="" />
+        </div>
+
+        <div className="text">
+          <h2>EDUCATION</h2>
+          <p>
+            <br />
+            &gt; <span className="school">Amrita Vishwa Vidyapeetham, Coimbatore</span><br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;B.Tech (CSE)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span className="cgpa">CGPA: 8.95</span>.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;Activities:<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASCII Newsletter Editor,<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IIC Logistics Team Member,<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Srishti Book Club Member,<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quizkreig Member<br />
+            <br /><br />
+            &gt; <span className="school">St. Shantal English Medium School (CBSE), Trivandrum</span><br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;HSC: 90.4%<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;SSLC: 97.6%<br />
+          </p>
+        </div>
+
+        <div className="picture">
+          <img src="pictures/img2.jpg" alt="" />
+        </div>
+      </div>
+
+      <footer>
+        <p>Thank you for visiting!</p>
+      </footer>
+    </>
+  );
+}
+
+export default Home;
