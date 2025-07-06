@@ -78,6 +78,43 @@ function Home() {
         </div>
       </div>
 
+      <div class="tech-stack">
+        <h2>TECHSTACK</h2>
+
+        <br /><br />
+        <div className="techs">
+          <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+            alt="HTML" className="tech" />
+          <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+            alt="JavaScript" className="tech" />
+          <img src="https://img.shields.io/badge/css-%2300A0ED.svg?style=for-the-badge&logo=css3&logoColor=white"
+            alt="CSS" className="tech" />
+          <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
+            alt="C" className="tech" />
+          <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+            alt="C++" className="tech" />
+          <img src="https://img.shields.io/badge/Haskell-5e5086?style=for-the-badge&logo=haskell&logoColor=white"
+            alt="Haskell" className="tech" />
+          <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
+            alt="Java" className="tech" />
+          <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+            alt="Python" className="tech" />
+          <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
+            alt="MySQL" className="tech" />
+          <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
+            alt="Figma" className="tech" />
+          <img src="https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"
+            alt="PowerBi" className="tech" />
+          <img src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white"
+            alt="Google Cloud" className="tech" />
+          <img src="https://img.shields.io/badge/firebase-%23B34A13.svg?style=for-the-badge&logo=firebase&logoColor=white"
+            alt="Firebase" className="tech" />
+          <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+            alt="React" className="tech" />
+        </div>
+
+      </div>
+
       <footer>
         <p>Thank you for visiting!</p>
       </footer>
