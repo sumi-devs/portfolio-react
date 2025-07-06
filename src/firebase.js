@@ -3,7 +3,7 @@ import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
 
-    apiKey: "AIzaSyDB_uhYcclyLK6s9nlYOOMBYAXYYB3efX0",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
 
     authDomain: "portfolio-guestbook-6d34c.firebaseapp.com",
 
