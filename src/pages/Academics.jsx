@@ -56,7 +56,7 @@ function Academics() {
           <p>
             <span className="aboutspan">THIS PORTFOLIO!</span>
             <br /><br />
-            This personal portfolio website's front-end was developed using HTML, CSS, and JavaScript.
+            This personal portfolio website's front-end was developed using ReactJS framework.
             I have also implemented a Firestore NoSQL backend database for the "Guestbook" feature in the contacts page.
           </p>
           <br />
