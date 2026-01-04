@@ -211,6 +211,7 @@ footer {
 .carousel-slide {
     width: 100%;
     flex-shrink: 0;
+    height: 150px;
 }
 
 .carousel-button {
