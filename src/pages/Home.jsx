@@ -60,7 +60,7 @@ function Home() {
             <br />
             &gt; <span className="school">Amrita Vishwa Vidyapeetham, Coimbatore</span><br /><br />
             &nbsp;&nbsp;&nbsp;&nbsp;B.Tech (CSE)<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<span className="cgpa">CGPA: 8.95</span>.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span className="cgpa">CGPA: 9.02</span>.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;Activities:<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASCII Newsletter Editor,<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IIC Logistics Team Member,<br />
