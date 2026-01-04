@@ -30,6 +30,8 @@ function Home() {
             My interests lie in <span className="aboutspan">full-stack development and mobile app development</span> — I particularly enjoy designing user-friendly and creative interfaces and bringing ideas to life through front-end work (Psst! Try mousing over the letters above!).
             <br /><br />
             I consider myself a quick and curious learner, always eager to dive deep into new topics and build projects that are both innovative and fun.
+            <br /><br />
+            I enjoy working on projects that sit at the intersection of design and technology, where thoughtful structure, clean visuals, and intuitive interactions matter as much as functionality. Through coursework, personal projects, and research-oriented work, I have developed a strong interest in building systems that are well-organized, scalable, and purposeful.
           </p>
         </div>
 
