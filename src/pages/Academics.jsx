@@ -88,6 +88,8 @@ function Academics() {
             alt="Flutter" className="tech" />
           <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"
             alt="Dart" className="tech" />
+          <img src="https://img.shields.io/badge/firebase-%23B34A13.svg?style=for-the-badge&logo=firebase&logoColor=white"
+            alt="Firebase" className="tech" />
         </div>
 
         <div className="amritaclubs">
