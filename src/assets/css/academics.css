@@ -212,6 +212,8 @@ footer {
     width: 100%;
     flex-shrink: 0;
     height: 150px;
+    height: 420px;
+    overflow: hidden;
 }
 
 .carousel-button {
