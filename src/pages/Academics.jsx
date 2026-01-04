@@ -18,6 +18,78 @@ function Academics() {
       </div>
 
       <div className="projects">
+        <div className="studyhive">
+          <p>
+            <span className="aboutspan">STUDYHIVE: A STUDY ENVIRONMENT</span>
+            <br /><br />
+            STUDYHIVE IS AN INTERACTIVE STUDY PLATFORM DESIGNED TO IMPROVE ACADEMIC PRODUCTIVITY, STREAMLINE TASK MANAGEMENT, AND FOSTER PEER COLLABORATION. THE SYSTEM ARCHITECTURE IS MODULAR, FOCUSING ON ESSENTIAL FEATURES LIKE PERSONALIZED DASHBOARDS, TASK-BASED COMPONENTS, ORGANIZATIONAL TOOLS , AND COLLABORATIVE SPACES. 
+          </p>
+          <br />
+          <Carousel images={[
+            'pictures/sh1.jpg',
+            'pictures/sh2.jpg',
+            'pictures/sh3.jpg',
+            'pictures/sh4.jpg',
+            'pictures/sh5.jpg',
+            'pictures/sh6.jpg',
+            'pictures/sh7.jpg',
+            'pictures/sh8.jpg',
+            'pictures/sh9.jpg',
+            'pictures/sh10.jpg'
+          ]} />
+          <br />
+          <span className="aboutspan">FEATURES</span>
+          <br /><br />
+          &gt; Study Buddy Finder. <br />
+          &gt; Study Group Creator + Finder. <br />
+          &gt; Personalized Dashboard. <br />
+          &gt; Notes Organization Repo + AI_Based Summarizer. <br />
+          &gt; Tasks and Assignments Tracker. <br />
+          &gt; Quiz Set Creator + Finder. <br />
+          <br />
+          <span className="aboutspan">TECHSTACK</span>
+          <br /><br />
+          <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+            alt="React" className="tech" />
+          <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
+            alt="MongoDB" className="tech" />
+          <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
+            alt="Express" className="tech" />
+          <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
+            alt="Node" className="tech" />
+        </div>
+
+        <div className="rollcredits">
+          <p>
+            <span className="aboutspan">ROLLCREDITS</span>
+            <br /><br />
+            A SOCIAL MEDIA PLATFORM TO LOG YOUR MOVIE AND TV SHOW WATCH ACTIVITY AND DISCOVER NEW MEDIA. 
+          </p>
+          <br />
+          <Carousel images={[
+            'pictures/rc1.jpg',
+            'pictures/rc2.jpg',
+            'pictures/rc3.jpg',
+            'pictures/rc4.jpg',
+            'pictures/rc5.jpg',
+            'pictures/rc6.jpg'
+          ]} />
+          <br />
+          <span className="aboutspan">FEATURES</span>
+          <br /><br />
+          &gt; Discover movies and shows. <br />
+          &gt; Log your activity. <br />
+          &gt; Rate your watches. <br />
+          &gt; Add media to your watchlist. <br />
+          <br />
+          <span className="aboutspan">TECHSTACK</span>
+          <br /><br />
+          <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"
+            alt="Flutter" className="tech" />
+          <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"
+            alt="Dart" className="tech" />
+        </div>
+
         <div className="amritaclubs">
           <p>
             <span className="aboutspan">AMRITA STUDENT CLUBS WEBSITE</span>
@@ -90,22 +162,14 @@ function Academics() {
 
       <div className="accordions">
         <h2><span className="aboutspan">ONGOING PROJECTS</span></h2>
-        <Accordion title="FLOWER CLASSIFIER">A flower classification system designed to automatically identify different flower species from images. Leveraging CNNs, it learns patterns in shape and color to achieve high accuracy.</Accordion>
-        <Accordion title="STORYGRAPH CLONE">A personal book-tracking website where users can log books, add reviews, and track reading progress. Includes authentication and a clean dashboard.</Accordion>
-        <Accordion title="STUDYHIVE">A web app to organize study sessions, tasks, and collaborate with peers. Includes group scheduling, shared resources, and to-do lists.</Accordion>
-        <Accordion title="IMAGE COLORIZATION">A project using deep learning to automatically colorize black-and-white images, adding realism based on learned color patterns.</Accordion>
+        <Accordion title="FEDERATED SOCIAL NETWORKING PLATFORM">A micro-blogging website similar to Mastodon. Built with the intention of joining the Fediverse and contributing to open-source and decentralized social media.</Accordion>
+        <Accordion title="MULTI-SOURCE ANALYSIS OF MARINE POLLUTION EVENTS">A research project intended to contribute to Goal 14 of the UN Sustainable Development Goals that encourages people to work towards the improvement of marine ecosystems.</Accordion>
       </div>
 
       <div className="accordions">
         <h2><span className="aboutspan">COMPLETED CERTIFICATIONS</span></h2>
         <Accordion title="GOOGLE CLOUD COMPUTING FOUNDATIONS" link="https://www.credly.com/badges/9006b938-62f8-46dc-9876-25205ce35a19/public_url" />
-      </div>
-
-      <div className="accordions">
-        <h2><span className="aboutspan">ONGOING CERTIFICATIONS</span></h2>
-        <Accordion title="NPTEL COMPUTER VISION" link="https://onlinecourses.nptel.ac.in/noc25_cs143" />
-        <Accordion title="OCI AI FOUNDATIONS" link="https://mylearn.oracle.com/ou/learning-path/become-a-oci-ai-foundations-associate-2025/147781" />
-        <Accordion title="ORACLE APEX CLOUD PROFESSIONAL" link="https://mylearn.oracle.com/ou/learning-path/become-an-oracle-apex-developer-professional-2025/146080" />
+        <Accordion title="OPENCV PYTORCH BOOTCAMP" link="https://courses.opencv.org/certificates/925b8015e82b480aa20f4bc89fadcbb2" />
       </div>
 
       <footer>
