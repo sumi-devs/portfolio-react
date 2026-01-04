@@ -26,16 +26,16 @@ function Academics() {
           </p>
           <br />
           <Carousel images={[
-            'pictures/sh1.jpg',
-            'pictures/sh2.jpg',
-            'pictures/sh3.jpg',
-            'pictures/sh4.jpg',
-            'pictures/sh5.jpg',
-            'pictures/sh6.jpg',
-            'pictures/sh7.jpg',
-            'pictures/sh8.jpg',
-            'pictures/sh9.jpg',
-            'pictures/sh10.jpg'
+            'pictures/sh1.png',
+            'pictures/sh2.png',
+            'pictures/sh3.png',
+            'pictures/sh4.png',
+            'pictures/sh5.png',
+            'pictures/sh6.png',
+            'pictures/sh7.png',
+            'pictures/sh8.png',
+            'pictures/sh9.png',
+            'pictures/sh10.png'
           ]} />
           <br />
           <span className="aboutspan">FEATURES</span>
@@ -67,12 +67,12 @@ function Academics() {
           </p>
           <br />
           <Carousel images={[
-            'pictures/rc1.jpg',
-            'pictures/rc2.jpg',
-            'pictures/rc3.jpg',
-            'pictures/rc4.jpg',
-            'pictures/rc5.jpg',
-            'pictures/rc6.jpg'
+            'pictures/rc1.png',
+            'pictures/rc2.png',
+            'pictures/rc3.png',
+            'pictures/rc4.png',
+            'pictures/rc5.png',
+            'pictures/rc6.png'
           ]} />
           <br />
           <span className="aboutspan">FEATURES</span>
