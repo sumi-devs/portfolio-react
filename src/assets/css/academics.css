@@ -147,9 +147,10 @@ nav a {
 
 .projects {
     font-size: x-large;
-    margin: 0px 50px 50px 50px;
-    display: flex;
-    gap: 2em;;
+    margin: 0 50px 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 2em;
 }
 
 .aboutspan {
@@ -162,7 +163,9 @@ nav a {
 }
 
 .amritaclubs,
-.inception {
+.inception,
+.studyhive,
+.rollcredits {
     padding: 10px;
     border-style: solid;
     border-width: 1px;
@@ -170,7 +173,9 @@ nav a {
 }
 
 .amritaclubs:hover,
-.inception:hover {
+.inception:hover,
+.studyhive:hover,
+.rollcredits:hover {
     background-color: #00000099;
     color: #e6e1c9;
 
