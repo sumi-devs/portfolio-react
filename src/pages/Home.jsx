@@ -27,7 +27,7 @@ function Home() {
           <p>
             I am currently a <span className="aboutspan">Computer Science and Engineering</span> undergraduate student.
             <br /><br />
-            My interests lie in <span className="aboutspan">full-stack development and mobile app development</span> — I particularly enjoy designing user-friendly and creative interfaces and bringing ideas to life through front-end work (Psst! Try mousing over the letters above!).
+            My interests lie in <span className="aboutspan">full-stack development and mobile app development</span> — I particularly enjoy designing user-friendly and creative interfaces and bringing ideas to life through front-end work (Psst! Try mousing over the letters above and using the <span className="colourspan">Colours</span> feature in the menu).
             <br /><br />
             I consider myself a quick and curious learner, always eager to dive deep into new topics and build projects that are both innovative and fun.
             <br /><br />

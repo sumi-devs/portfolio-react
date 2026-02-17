@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../context/ThemeContext';
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const { cycleTheme } = useTheme();
 
   return (
     <>
@@ -22,6 +24,7 @@ function Navbar() {
             <div className="link"><Link to="/">{'> HOME'}</Link></div>
             <div className="link"><Link to="/academics">{'> ACADEMICS'}</Link></div>
             <div className="link"><Link to="/contact">{'> CONTACT'}</Link></div>
+            <div className="link"><p id="coloursbutton" onClick={cycleTheme}>{'> COLOURS'}</p></div>
           </div>
         </div>
       </div>

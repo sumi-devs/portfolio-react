@@ -12,10 +12,10 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #e6e1c9;
+    background-color: var(--bg, #e6e1c9);
+    color: var(--text, #0f0f0f);
     background-image:
-        linear-gradient(#00000010 1px, transparent 1px),
-        linear-gradient(90deg, #00000010 1px, transparent 1px);
+        var(--lines, linear-gradient(#00000010 1px, transparent 1px), linear-gradient(90deg, #00000010 1px, transparent 1px));
     background-size: 50px 50px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -33,14 +33,14 @@ nav {
 }
 
 nav a {
-    color: #e6e1c9;
+    color: var(--bg, #e6e1c9);
     text-decoration: none;
     font-weight: 600;
 }
 
 .logo-box {
-    color: #e6e1c9;
-    background-color: #0f0f0f;
+    color: var(--bg, #e6e1c9);
+    background-color: var(--accent, #0f0f0f);
     padding: 6px 13px;
     transform: translate(10px, 10px);
 }
@@ -60,9 +60,9 @@ nav a {
     position: absolute;
     transition: opacity 0.3s ease;
     margin: 0;
-    color: #e6e1c9;
+    color: var(--bg, #e6e1c9);
     text-align: justify;
-    background-color: #0f0f0f;
+    background-color: var(--accent, #0f0f0f);
     padding: 6px 13px;
     transform: translate(-31px, 0px);
 }
@@ -70,7 +70,7 @@ nav a {
 #menu-close {
     font-size: 1.8rem;
     line-height: 1;
-    color: #e6e1c9;
+    color: var(--bg, #e6e1c9);
 }
 
 .menu-overlay {
@@ -79,7 +79,7 @@ nav a {
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #0f0f0f;
+    background-color: var(--accent, #0f0f0f);
     z-index: 1;
     transform: translateX(100%);
     transition: transform 0.5s ease;
@@ -105,7 +105,7 @@ nav a {
 
 .link a,
 .link p {
-    color: #e6e1c9;
+    color: var(--bg, #e6e1c9);
     font-size: 1.5rem;
     text-decoration: none;
     cursor: pointer;
@@ -139,7 +139,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0f0f0f;
+    color: var(--text, #0f0f0f);
     font-size: 30px;
     font-weight: bold;
     transition: background-color 0.3s;
@@ -154,8 +154,8 @@ nav a {
 }
 
 .aboutspan {
-    background-color: #00000099;
-    color: #e6e1c9;
+    background-color: var(--highlight, #00000099);
+    color: var(--bg, #e6e1c9);
 }
 
 .colourspan {
@@ -190,7 +190,7 @@ nav a {
 }
 
 footer {
-    color: #0f0f0f;
+    color: var(--text, #0f0f0f);
     text-align: center;
     padding: 1em 0;
     width: 100%;
