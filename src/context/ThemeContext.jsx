@@ -5,6 +5,14 @@ const ThemeContext = createContext();
 const THEME_KEY = 'themeIndex';
 
 const themes = [
+  // cherry blossom
+  {
+    lines: 'linear-gradient(#F2AEBC30 1px, transparent 1px), linear-gradient(90deg, #F2AEBC30 1px, transparent 1px)',
+    background: '#F2DCDB',
+    text: '#3D5D91',
+    accent: '#6C0820',
+    highlight: '#5A86CB'
+  },
   {
     lines: 'linear-gradient(#00000010 1px, transparent 1px), linear-gradient(90deg, #00000010 1px, transparent 1px)',
     background: '#f4a261',
@@ -32,6 +40,31 @@ const themes = [
     text: '#081c15',
     accent: '#40916c',
     highlight: '#52b788'
+  },
+
+  // bistro
+  {
+    lines: 'linear-gradient(#89141a18 1px, transparent 1px), linear-gradient(90deg, #89141a18 1px, transparent 1px)',
+    background: '#F1E6D2',
+    text: '#210706',
+    accent: '#891D1A',
+    highlight: '#5E657B'
+  },
+  // garden
+  {
+    lines: 'linear-gradient(#5D7B3D20 1px, transparent 1px), linear-gradient(90deg, #5D7B3D20 1px, transparent 1px)',
+    background: '#F6C94D',
+    text: '#5D7B3D',
+    accent: '#E4568B',
+    highlight: '#6b9fd0ff'
+  },
+  // merlot
+  {
+    lines: 'linear-gradient(#50071115 1px, transparent 1px), linear-gradient(90deg, #50071115 1px, transparent 1px)',
+    background: '#ED9BBD',
+    text: '#500711',
+    accent: '#B0041A',
+    highlight: '#FFC95F'
   }
 ];
 
