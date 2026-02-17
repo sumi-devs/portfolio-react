@@ -6,7 +6,11 @@
     box-sizing: border-box;
 }
 
-html, body, #root, .default, .alt {
+html,
+body,
+#root,
+.default,
+.alt {
     margin: 0;
     padding: 0;
 }
@@ -21,7 +25,7 @@ body {
     color: var(--text, #0f0f0f);
     background-image:
         var(--lines, linear-gradient(#00000010 1px, transparent 1px), linear-gradient(90deg, #00000010 1px, transparent 1px));
-    background-size: 50px 50px;
+    background-size: clamp(35px, 5vw, 50px) clamp(35px, 5vw, 50px);
     font-family: "Raleway", sans-serif;
     font-style: normal;
 }
@@ -31,7 +35,7 @@ nav {
     left: 0;
     position: fixed;
     width: 100vw;
-    padding: 2.5em;
+    padding: clamp(1em, 3vw, 2.5em);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,7 +117,7 @@ nav a {
 .link a,
 .link p {
     color: var(--bg, #e6e1c9);
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-decoration: none;
     cursor: pointer;
     margin: 0;
@@ -126,22 +130,22 @@ nav a {
 
 .grid-container,
 .grid-container2 {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: clamp(20px, 4vw, 50px);
+    margin-right: clamp(20px, 4vw, 50px);
     background: transparent;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 50px);
-    grid-auto-rows: 50px;
+    grid-template-columns: repeat(auto-fill, clamp(35px, 5vw, 50px));
+    grid-auto-rows: clamp(35px, 5vw, 50px);
     gap: 0;
 }
 
 .grid-container {
-    margin-top: 150px;
+    margin-top: clamp(149.5px, 21.5vh, 219.5px);
     margin-bottom: 0;
 }
 
 .grid-container2 {
-    margin-bottom: 50px;
+    margin-bottom: clamp(20px, 4vw, 50px);
 }
 
 .letter {
@@ -149,16 +153,16 @@ nav a {
     align-items: center;
     justify-content: center;
     color: var(--text, #0f0f0f);
-    font-size: 30px;
+    font-size: clamp(18px, 2.5vw, 30px);
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .intro {
-    font-size: x-large;
-    margin: 0px 50px 0px 50px;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+    margin: 0px clamp(20px, 4vw, 50px) 0px clamp(20px, 4vw, 50px);
     display: flex;
-    gap: 2em;
+    gap: clamp(1em, 2vw, 2em);
     flex-direction: row;
 }
 
@@ -173,7 +177,7 @@ nav a {
 
 .professional,
 .personal {
-    padding: 10px;
+    padding: clamp(6px, 1vw, 10px);
     border-style: solid;
     border-width: 1px;
     flex: 1;
@@ -203,8 +207,8 @@ nav a {
     border-width: 1px;
     border-color: #00000099;
     width: min-content;
-    margin-top: 30px;
-    padding: 15px;
+    margin-top: clamp(15px, 2.5vw, 30px);
+    padding: clamp(8px, 1.2vw, 15px);
     color: #e6e1c9;
     background-color: #f480c0bd;
 }
@@ -217,14 +221,14 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    margin: 50px 50px 50px 50px;
+    margin: clamp(20px, 4vw, 50px);
     flex-direction: row;
 }
 
 .text,
 .picture {
     flex: 1;
-    min-width: 250px;
+    min-width: clamp(180px, 25vw, 250px);
 }
 
 .text {
@@ -235,7 +239,7 @@ nav a {
 }
 
 .text p {
-    font-size: 22px;
+    font-size: clamp(14px, 1.8vw, 22px);
 }
 
 .text,
@@ -279,10 +283,10 @@ nav a {
 }
 
 .tech-stack {
-    margin: 0px 50px 50px 50px;
+    margin: 0px clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px);
     border: 1px solid #0f0f0f;
-    padding: 20px;
-    font-size: large;
+    padding: clamp(10px, 1.5vw, 20px);
+    font-size: clamp(0.9rem, 1.5vw, 1.125rem);
 }
 
 .tech-stack:hover {
@@ -292,7 +296,7 @@ nav a {
 
 .techs img {
     width: auto;
-    height: 40px;
+    height: clamp(28px, 3.5vw, 40px);
 }
 
 .techs {
@@ -315,17 +319,10 @@ footer {
     }
 }
 
-@media (max-width: 750px) {
-
-    .grid-container,
-    .grid-container2 {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-}
-
 @media (max-width: 800px) {
-    .intro, .education {
+
+    .intro,
+    .education {
         flex-direction: column;
     }
 
@@ -333,5 +330,57 @@ footer {
     .personal {
         width: 100%;
         height: auto;
+    }
+
+    .grid-container,
+    .grid-container2 {
+        margin-left: clamp(15px, 3vw, 40px);
+        margin-right: clamp(15px, 3vw, 40px);
+    }
+
+    .grid-container {
+        margin-top: clamp(105px, 15.5vh, 165px);
+    }
+
+    .intro {
+        margin: 0px clamp(15px, 3vw, 40px);
+        gap: clamp(0.5em, 1.5vw, 1em);
+    }
+
+    .education {
+        margin: clamp(15px, 3vw, 40px);
+    }
+
+    .tech-stack {
+        margin: 0px clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .grid-container,
+    .grid-container2 {
+        grid-template-columns: repeat(auto-fill, clamp(28px, 8vw, 40px));
+        grid-auto-rows: clamp(28px, 8vw, 40px);
+    }
+
+    .letter {
+        font-size: clamp(14px, 4vw, 20px);
+    }
+
+    .intro {
+        font-size: clamp(0.85rem, 3.5vw, 1.1rem);
+    }
+
+    .text p {
+        font-size: clamp(12px, 3.5vw, 16px);
+    }
+
+    .tech-stack {
+        font-size: clamp(0.8rem, 3vw, 1rem);
+    }
+
+    .techs img {
+        height: clamp(22px, 6vw, 30px);
     }
 }

@@ -16,7 +16,7 @@ body {
     color: var(--text, #0f0f0f);
     background-image:
         var(--lines, linear-gradient(#00000010 1px, transparent 1px), linear-gradient(90deg, #00000010 1px, transparent 1px));
-    background-size: 50px 50px;
+    background-size: clamp(35px, 5vw, 50px) clamp(35px, 5vw, 50px);
     font-family: "Raleway", sans-serif;
     font-style: normal;
 }
@@ -24,7 +24,7 @@ body {
 nav {
     position: fixed;
     width: 100vw;
-    padding: 2.5em;
+    padding: clamp(1em, 3vw, 2.5em);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +106,7 @@ nav a {
 .link a,
 .link p {
     color: var(--bg, #e6e1c9);
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-decoration: none;
     cursor: pointer;
     margin: 0;
@@ -119,20 +119,20 @@ nav a {
 
 .grid-container-proj,
 .grid-container-cert {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: clamp(20px, 4vw, 50px);
+    margin-right: clamp(20px, 4vw, 50px);
     background: transparent;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 50px);
-    grid-auto-rows: 50px;
+    grid-template-columns: repeat(auto-fill, clamp(35px, 5vw, 50px));
+    grid-auto-rows: clamp(35px, 5vw, 50px);
 }
 
 .grid-container-proj {
-    margin-top: 150px;
+    margin-top: clamp(149.5px, 21.5vh, 219.5px);
 }
 
 .grid-container-cert {
-    margin-bottom: 50px;
+    margin-bottom: clamp(20px, 4vw, 50px);
 }
 
 .letter {
@@ -140,17 +140,17 @@ nav a {
     align-items: center;
     justify-content: center;
     color: var(--text, #0f0f0f);
-    font-size: 30px;
+    font-size: clamp(18px, 2.5vw, 30px);
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .projects {
-    font-size: x-large;
-    margin: 0 50px 50px 50px;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+    margin: 0 clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
+    gap: clamp(1em, 2vw, 2em);
 }
 
 .aboutspan {
@@ -166,7 +166,7 @@ nav a {
 .inception,
 .studyhive,
 .rollcredits {
-    padding: 10px;
+    padding: clamp(6px, 1vw, 10px);
     border-style: solid;
     border-width: 1px;
     flex: 1;
@@ -220,7 +220,7 @@ footer {
     background-color: #f480c0bd;
     border: 1px solid #f480c0bd;
     color: #e6e1c9;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 2vw, 2rem);
     padding: 0.05em 0.2em;
     cursor: pointer;
     z-index: 0;
@@ -244,7 +244,7 @@ footer {
     border-top: 1px solid #0f0f0f;
     border-left: 1px solid #0f0f0f;
     border-right: 1px solid #0f0f0f;
-    margin: 0px 50px 50px 50px;
+    margin: 0px clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px);
 }
 
 .accordions h2 {
@@ -315,12 +315,9 @@ footer {
     }
 }
 
-@media (max-width: 750px) {
-
-    .grid-container-proj,
-    .grid-container-cert {
-        margin-left: 50px;
-        margin-right: 50px;
+@media (max-width: 900px) {
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -330,14 +327,49 @@ footer {
     }
 
     .amritaclubs,
-    .inception {
+    .inception,
+    .studyhive,
+    .rollcredits {
         width: 100%;
         height: auto;
     }
+
+    .grid-container-proj,
+    .grid-container-cert {
+        margin-left: clamp(15px, 3vw, 40px);
+        margin-right: clamp(15px, 3vw, 40px);
+    }
+
+    .grid-container-proj {
+        margin-top: clamp(105px, 15.5vh, 165px);
+    }
+
+    .projects {
+        margin: 0 clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px);
+    }
+
+    .accordions {
+        margin: 0px clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px);
+    }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 480px) {
+
+    .grid-container-proj,
+    .grid-container-cert {
+        grid-template-columns: repeat(auto-fill, clamp(28px, 8vw, 40px));
+        grid-auto-rows: clamp(28px, 8vw, 40px);
+    }
+
+    .letter {
+        font-size: clamp(14px, 4vw, 20px);
+    }
+
     .projects {
-        grid-template-columns: 1fr;
+        font-size: clamp(0.85rem, 3.5vw, 1.1rem);
+    }
+
+    .carousel-button {
+        font-size: clamp(1rem, 3vw, 1.5rem);
     }
 }

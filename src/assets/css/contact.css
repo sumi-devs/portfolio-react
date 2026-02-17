@@ -17,7 +17,7 @@ body {
     color: var(--text, #0f0f0f);
     background-image:
         var(--lines, linear-gradient(#00000010 1px, transparent 1px), linear-gradient(90deg, #00000010 1px, transparent 1px));
-    background-size: 50px 50px;
+    background-size: clamp(35px, 5vw, 50px) clamp(35px, 5vw, 50px);
     font-family: "Raleway", sans-serif;
     font-style: normal;
 }
@@ -25,7 +25,7 @@ body {
 nav {
     position: fixed;
     width: 100vw;
-    padding: 2.5em;
+    padding: clamp(1em, 3vw, 2.5em);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,7 +107,7 @@ nav a {
 .link a,
 .link p {
     color: var(--bg, #e6e1c9);
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-decoration: none;
     cursor: pointer;
     margin: 0;
@@ -119,11 +119,11 @@ nav a {
 }
 
 .grid-container-contact {
-    margin: 150px 50px 50px 50px;
+    margin: clamp(149.5px, 21.5vh, 219.5px) clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px);
     background: transparent;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 50px);
-    grid-auto-rows: 50px;
+    grid-template-columns: repeat(auto-fill, clamp(35px, 5vw, 50px));
+    grid-auto-rows: clamp(35px, 5vw, 50px);
 }
 
 .letter {
@@ -131,7 +131,7 @@ nav a {
     align-items: center;
     justify-content: center;
     color: var(--text, #0f0f0f);
-    font-size: 30px;
+    font-size: clamp(18px, 2.5vw, 30px);
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -139,8 +139,8 @@ nav a {
 .contact {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
-    margin: 0px 50px 50px 50px;
+    gap: clamp(0.5em, 1.5vw, 1em);
+    margin: 0px clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px);
     flex-direction: row;
 }
 
@@ -151,7 +151,7 @@ nav a {
     background: transparent;
     color: #0f0f0f;
     padding: 1.5em;
-    font-size: x-large;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
     width: 100%;
     height: auto;
     border-style: solid;
@@ -187,20 +187,20 @@ nav a {
 }
 
 .message-wrap {
-    font-size: x-large;
-    margin: 20px 50px 50px 50px;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+    margin: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px) clamp(20px, 4vw, 50px);
 }
 
 #messages {
     word-wrap: break-word;
-    font-size: x-large;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
     padding: 1.5em;
     border: 1px solid #0f0f0f;
     width: 100%;
-    height: 500px;
+    height: clamp(300px, 50vh, 500px);
     overflow-y: scroll;
     overflow-x: auto;
-    max-height: 500px;
+    max-height: clamp(300px, 50vh, 500px);
     margin-top: 20px;
 }
 
@@ -216,7 +216,7 @@ textarea,
 }
 
 textarea {
-    height: 180px;
+    height: clamp(120px, 20vh, 180px);
 }
 
 #name {
@@ -231,7 +231,7 @@ textarea {
     width: 100px;
     height: 50px;
     border: 1px solid #0f0f0f;
-    font-size: x-large;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
 }
 
 .contactspan {
@@ -255,34 +255,47 @@ footer {
     }
 }
 
-@media (max-width: 750px) {
-
-    .grid-container {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-}
-
 @media (max-width: 800px) {
     .contact {
         flex-direction: column;
     }
-}
 
-@media (max-width: 500px) {
-    #messages {
-        width: 90%;
+    .grid-container-contact {
+        margin: clamp(105px, 15.5vh, 165px) clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px);
     }
 
     .contact {
-        width: 73%;
+        margin: 0px clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px);
     }
 
+    .message-wrap {
+        margin: clamp(10px, 2vw, 20px) clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px) clamp(15px, 3vw, 40px);
+    }
+}
+
+@media (max-width: 480px) {
     .grid-container-contact {
-        margin-right: 100px;
+        grid-template-columns: repeat(auto-fill, clamp(28px, 8vw, 40px));
+        grid-auto-rows: clamp(28px, 8vw, 40px);
     }
 
-    footer p {
-        margin-right: 50px;
+    .letter {
+        font-size: clamp(14px, 4vw, 20px);
+    }
+
+    .info,
+    .guest {
+        font-size: clamp(0.85rem, 3.5vw, 1.1rem);
+    }
+
+    #messages {
+        width: 100%;
+        height: clamp(200px, 40vh, 350px);
+        max-height: clamp(200px, 40vh, 350px);
+        font-size: clamp(0.85rem, 3.5vw, 1.1rem);
+    }
+
+    .guest button {
+        font-size: clamp(0.85rem, 3.5vw, 1.1rem);
     }
 }
