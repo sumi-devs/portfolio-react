@@ -301,7 +301,58 @@ footer {
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease;
-    padding: 0 1em;
+}
+
+.project-accordion-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2em;
+    padding: 1.5em;
+    align-items: start;
+}
+
+.project-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.project-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.project-links {
+    display: flex;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+.project-btn {
+    padding: 8px 16px;
+    border: 1px solid #0f0f0f;
+    background: transparent;
+    color: #0f0f0f;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.project-btn:hover {
+    background: #0f0f0f;
+    color: #e6e1c9;
+}
+
+@media (max-width: 900px) {
+    .project-accordion-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
 }
 
 .accordion-item.open .accordion-toggle {

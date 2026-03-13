@@ -15,7 +15,7 @@ function Accordion({ title, children, link }) {
       </div>
       {children && (
         <div className="accordion-content" style={{ height: open ? 'auto' : '0' }}>
-          <p>{children}</p>
+          {children}
         </div>
       )}
     </div>

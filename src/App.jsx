@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Academics from './pages/Academics';
 import Contact from './pages/Contact';
 import { ThemeProvider } from './context/ThemeContext';
+import ElevatorScrollbar from './components/ElevatorScrollbar';
 import './assets/css/portfolio.css';
 import './assets/css/academics.css';
 import './assets/css/contact.css';
@@ -13,6 +14,7 @@ function App() {
     <ThemeProvider>
       <div>
         <Router>
+          <ElevatorScrollbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/academics" element={<Academics />} />
