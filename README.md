@@ -1,10 +1,10 @@
-# 🌟 Sumithra's Personal Portfolio
+# Sumithra's Personal Portfolio
 
 Welcome to my personal portfolio website! This is a creative and interactive space where I showcase my projects, certifications, and more about me as a Computer Science & Engineering student.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Interactive hero grid introduction
 - Projects and certifications showcased with carousels and accordions
@@ -15,7 +15,7 @@ Welcome to my personal portfolio website! This is a creative and interactive spa
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
 - **ReactJS** — Front-end framework
 - **HTML5, CSS3, JavaScript** — Core web technologies
@@ -26,11 +26,8 @@ Welcome to my personal portfolio website! This is a creative and interactive spa
 
 ---
 
-## 🌐 Live Link
+## Live Link
 
-👉 [View the live portfolio here](https://sumithra-portfolio.vercel.app)
+[View the live portfolio here](https://sumithra-portfolio.vercel.app)
 
----
-
-### ⭐ Thank you for visiting! ⭐
 
