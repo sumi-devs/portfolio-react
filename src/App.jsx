@@ -4,6 +4,7 @@ import Academics from './pages/Academics';
 import Contact from './pages/Contact';
 import { ThemeProvider } from './context/ThemeContext';
 import ElevatorScrollbar from './components/ElevatorScrollbar';
+import CustomCursor from './components/CustomCursor';
 import './assets/css/portfolio.css';
 import './assets/css/academics.css';
 import './assets/css/contact.css';
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <ThemeProvider>
+      <CustomCursor />
       <div>
         <Router>
           <ElevatorScrollbar />
