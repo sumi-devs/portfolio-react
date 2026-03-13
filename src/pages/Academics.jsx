@@ -20,9 +20,9 @@ function Academics() {
       <div className="projects">
         <div className="federated">
           <p>
-            <span className="aboutspan">FEDERATED SOCIAL MEDIA</span>
+            <span className="aboutspan">Federated Social Media</span>
             <br /><br />
-            A FEDERATED SOCIAL MEDIA PLATFORM DESIGNED FOR OPEN-SOURCE AND DECENTRALIZED COMMUNICATION.
+            A federated social media platform designed for open-source, decentralized, and privacy-first communication. It enables users to connect across independent servers while maintaining control over their data, similar to protocols like ActivityPub.
           </p>
           <br />
           <Carousel images={[
@@ -35,14 +35,15 @@ function Academics() {
             'pictures/fs7.png'
           ]} />
           <br />
-          <span className="aboutspan">FEATURES</span>
+          <span className="aboutspan">Features</span>
           <br /><br />
-          &gt; Federated Search. <br />
-          &gt; Micro-blogging Activity. <br />
-          &gt; Decentralized Network. <br />
-          &gt; Real-time Interactions. <br />
+          &gt; Federated Search: Find users and content across different servers. <br />
+          &gt; Micro-blogging Activity: Share thoughts and engage in real-time. <br />
+          &gt; Decentralized Network: No single point of control, ensuring censorship resistance. <br />
+          &gt; Real-time Interactions: Powered by Socket.io for instant notifications and updates. <br />
+          &gt; Trusted Server Mesh: Secure and verified connections between network nodes.
           <br />
-          <span className="aboutspan">TECHSTACK</span>
+          <span className="aboutspan">Techstack</span>
           <br /><br />
           <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
             alt="React" className="tech" />
@@ -64,9 +65,9 @@ function Academics() {
 
         <div className="studyhive">
           <p>
-            <span className="aboutspan">STUDYHIVE: A STUDY ENVIRONMENT</span>
+            <span className="aboutspan">StudyHive: A Study Environment</span>
             <br /><br />
-            STUDYHIVE IS AN INTERACTIVE STUDY PLATFORM DESIGNED TO IMPROVE ACADEMIC PRODUCTIVITY, STREAMLINE TASK MANAGEMENT, AND FOSTER PEER COLLABORATION.
+            StudyHive is an interactive study platform designed to improve academic productivity, streamline task management, and foster peer collaboration.
           </p>
           <br />
           <Carousel images={[
@@ -82,7 +83,7 @@ function Academics() {
             'pictures/sh10.png'
           ]} />
           <br />
-          <span className="aboutspan">FEATURES</span>
+          <span className="aboutspan">Features</span>
           <br /><br />
           &gt; Study Buddy Finder. <br />
           &gt; Study Group Creator + Finder. <br />
@@ -91,7 +92,7 @@ function Academics() {
           &gt; Tasks and Assignments Tracker. <br />
           &gt; Quiz Set Creator + Finder. <br />
           <br />
-          <span className="aboutspan">TECHSTACK</span>
+          <span className="aboutspan">Techstack</span>
           <br /><br />
           <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
             alt="React" className="tech" />
@@ -105,9 +106,9 @@ function Academics() {
 
         <div className="rollcredits">
           <p>
-            <span className="aboutspan">ROLLCREDITS</span>
+            <span className="aboutspan">RollCredits</span>
             <br /><br />
-            A SOCIAL MEDIA PLATFORM TO LOG YOUR MOVIE AND TV SHOW WATCH ACTIVITY AND DISCOVER NEW MEDIA.
+            A social media platform to log your movie and tv show watch activity and discover new media.
           </p>
           <br />
           <Carousel images={[
@@ -119,14 +120,14 @@ function Academics() {
             'pictures/rc6.png'
           ]} />
           <br />
-          <span className="aboutspan">FEATURES</span>
+          <span className="aboutspan">Features</span>
           <br /><br />
           &gt; Discover movies and shows. <br />
           &gt; Log your activity. <br />
           &gt; Rate your watches. <br />
           &gt; Add media to your watchlist. <br />
           <br />
-          <span className="aboutspan">TECHSTACK</span>
+          <span className="aboutspan">Techstack</span>
           <br /><br />
           <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"
             alt="Flutter" className="tech" />
@@ -138,7 +139,7 @@ function Academics() {
 
         <div className="amritaclubs">
           <p>
-            <span className="aboutspan">AMRITA STUDENT CLUBS WEBSITE</span>
+            <span className="aboutspan">Amrita Student Clubs Website</span>
             <br /><br />
             This is a User Interface Design project built using HTML, CSS, and JavaScript, aimed at organizing the
             information of all the student clubs in Amrita University. Each club is featured with a clean card layout and links to learn more.
@@ -153,14 +154,14 @@ function Academics() {
             'pictures/clubs6.jpg'
           ]} />
           <br />
-          <span className="aboutspan">FEATURES</span>
+          <span className="aboutspan">Features</span>
           <br /><br />
           &gt; Modern UI with hero section, galleries and club cards. <br />
           &gt; Navigation bar with external links to official Amrita pages. <br />
           &gt; Visual presentation with images for each club. <br />
           &gt; Responsive layout. <br />
           <br />
-          <span className="aboutspan">TECHSTACK</span>
+          <span className="aboutspan">Techstack</span>
           <br /><br />
           <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
             alt="HTML" className="tech" />
@@ -172,14 +173,14 @@ function Academics() {
       </div>
 
       <div className="accordions">
-        <h2><span className="aboutspan">ONGOING PROJECTS</span></h2>
-        <Accordion title="MULTI-SOURCE ANALYSIS OF MARINE POLLUTION EVENTS">A research project intended to contribute to Goal 14 of the UN Sustainable Development Goals that encourages people to work towards the improvement of marine ecosystems.</Accordion>
+        <h2><span className="aboutspan">Ongoing Projects</span></h2>
+        <Accordion title="Multi-source analysis of marine pollution events">A research project intended to contribute to Goal 14 of the UN Sustainable Development Goals that encourages people to work towards the improvement of marine ecosystems.</Accordion>
       </div>
 
       <div className="accordions">
-        <h2><span className="aboutspan">COMPLETED CERTIFICATIONS</span></h2>
-        <Accordion title="GOOGLE CLOUD COMPUTING FOUNDATIONS" link="https://www.credly.com/badges/9006b938-62f8-46dc-9876-25205ce35a19/public_url" />
-        <Accordion title="OPENCV PYTORCH BOOTCAMP" link="https://courses.opencv.org/certificates/925b8015e82b480aa20f4bc89fadcbb2" />
+        <h2><span className="aboutspan">Completed Certifications</span></h2>
+        <Accordion title="Google Cloud Computing Foundations" link="https://www.credly.com/badges/9006b938-62f8-46dc-9876-25205ce35a19/public_url" />
+        <Accordion title="OpenCV PyTorch Bootcamp" link="https://courses.opencv.org/certificates/925b8015e82b480aa20f4bc89fadcbb2" />
       </div>
 
       <footer>

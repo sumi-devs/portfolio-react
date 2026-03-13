@@ -163,7 +163,7 @@ nav a {
 }
 
 .amritaclubs,
-.inception,
+.federated,
 .studyhive,
 .rollcredits {
     padding: clamp(6px, 1vw, 10px);
@@ -173,7 +173,7 @@ nav a {
 }
 
 .amritaclubs:hover,
-.inception:hover,
+.federated:hover,
 .studyhive:hover,
 .rollcredits:hover {
     background-color: #00000099;
