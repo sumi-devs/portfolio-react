@@ -126,7 +126,7 @@ function Academics() {
           &gt; Log your activity. <br />
           &gt; Rate your watches. <br />
           &gt; Add media to your watchlist. <br />
-          <br />
+          <br /><br />
           <span className="aboutspan">Techstack</span>
           <br /><br />
           <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"
