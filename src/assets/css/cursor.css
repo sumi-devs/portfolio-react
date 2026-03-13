@@ -1,17 +1,16 @@
-html,
-body {
-  cursor: none !important;
-}
-
-/* Also hide on interactive elements so the native pointer doesn't flash */
-a,
-button,
-[role="button"],
-input,
-label,
-select,
-textarea {
-  cursor: none !important;
+@media (min-width: 769px) {
+  html,
+  body,
+  a,
+  button,
+  [role="button"],
+  input,
+  label,
+  select,
+  textarea,
+  * {
+    cursor: none !important;
+  }
 }
 
 .custom-cursor-wrapper {
@@ -38,17 +37,5 @@ textarea {
 @media (max-width: 768px) {
   .custom-cursor-wrapper {
     display: none !important;
-  }
-
-  html,
-  body,
-  a,
-  button,
-  [role="button"],
-  input,
-  label,
-  select,
-  textarea {
-    cursor: auto !important;
   }
 }
