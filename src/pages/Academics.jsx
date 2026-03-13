@@ -18,11 +18,55 @@ function Academics() {
       </div>
 
       <div className="projects">
+        <div className="federated">
+          <p>
+            <span className="aboutspan">FEDERATED SOCIAL MEDIA</span>
+            <br /><br />
+            A FEDERATED SOCIAL MEDIA PLATFORM DESIGNED FOR OPEN-SOURCE AND DECENTRALIZED COMMUNICATION.
+          </p>
+          <br />
+          <Carousel images={[
+            'pictures/fs1.png',
+            'pictures/fs2.png',
+            'pictures/fs3.png',
+            'pictures/fs4.png',
+            'pictures/fs5.png',
+            'pictures/fs6.png',
+            'pictures/fs7.png'
+          ]} />
+          <br />
+          <span className="aboutspan">FEATURES</span>
+          <br /><br />
+          &gt; Federated Search. <br />
+          &gt; Micro-blogging Activity. <br />
+          &gt; Decentralized Network. <br />
+          &gt; Real-time Interactions. <br />
+          <br />
+          <span className="aboutspan">TECHSTACK</span>
+          <br /><br />
+          <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+            alt="React" className="tech" />
+          <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"
+            alt="Node" className="tech" />
+          <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
+            alt="Express" className="tech" />
+          <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
+            alt="MongoDB" className="tech" />
+          <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white"
+            alt="Socket.io" className="tech" />
+          <img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"
+            alt="Jest" className="tech" />
+          <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white"
+            alt="Render" className="tech" />
+          <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+            alt="Netlify" className="tech" />
+        </div>
+
         <div className="studyhive">
           <p>
             <span className="aboutspan">STUDYHIVE: A STUDY ENVIRONMENT</span>
             <br /><br />
-            STUDYHIVE IS AN INTERACTIVE STUDY PLATFORM DESIGNED TO IMPROVE ACADEMIC PRODUCTIVITY, STREAMLINE TASK MANAGEMENT, AND FOSTER PEER COLLABORATION. 
+            STUDYHIVE IS AN INTERACTIVE STUDY PLATFORM DESIGNED TO IMPROVE ACADEMIC PRODUCTIVITY, STREAMLINE TASK MANAGEMENT, AND FOSTER PEER COLLABORATION.
           </p>
           <br />
           <Carousel images={[
@@ -63,7 +107,7 @@ function Academics() {
           <p>
             <span className="aboutspan">ROLLCREDITS</span>
             <br /><br />
-            A SOCIAL MEDIA PLATFORM TO LOG YOUR MOVIE AND TV SHOW WATCH ACTIVITY AND DISCOVER NEW MEDIA. 
+            A SOCIAL MEDIA PLATFORM TO LOG YOUR MOVIE AND TV SHOW WATCH ACTIVITY AND DISCOVER NEW MEDIA.
           </p>
           <br />
           <Carousel images={[
@@ -125,46 +169,10 @@ function Academics() {
           <img src="https://img.shields.io/badge/css-%2300A0ED.svg?style=for-the-badge&logo=css3&logoColor=white"
             alt="CSS" className="tech" />
         </div>
-
-        <div className="inception">
-          <p>
-            <span className="aboutspan">THIS PORTFOLIO!</span>
-            <br /><br />
-            This personal portfolio website's front-end was developed using ReactJS framework.
-            I have also implemented a Firestore NoSQL backend database for the "Guestbook" feature in the contacts page.
-          </p>
-          <br />
-          <Carousel images={[
-            'pictures/portfolio1.jpg',
-            'pictures/portfolio3.jpg',
-            'pictures/portfolio4.jpg',
-            'pictures/portfolio2.jpg'
-          ]} />
-          <br />
-          <span className="aboutspan">FEATURES</span>
-          <br /><br />
-          &gt; Interactive hero grid introducing myself. <br />
-          &gt; Backend to store and display guestbook messages. <br />
-          &gt; Responsive design. <br />
-          <br />
-          <span className="aboutspan">TECHSTACK</span>
-          <br /><br />
-          <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-            alt="HTML" className="tech" /> 
-          <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-            alt="JavaScript" className="tech" />
-          <img src="https://img.shields.io/badge/css-%2300A0ED.svg?style=for-the-badge&logo=css3&logoColor=white"
-            alt="CSS" className="tech" />
-          <img src="https://img.shields.io/badge/firebase-%23FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black"
-            alt="Firebase" className="tech" />
-          <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
-            alt="React" className="tech" />
-        </div>
       </div>
 
       <div className="accordions">
         <h2><span className="aboutspan">ONGOING PROJECTS</span></h2>
-        <Accordion title="FEDERATED SOCIAL NETWORKING PLATFORM">A micro-blogging website similar to Mastodon. Built with the intention of joining the Fediverse and contributing to open-source and decentralized social media.</Accordion>
         <Accordion title="MULTI-SOURCE ANALYSIS OF MARINE POLLUTION EVENTS">A research project intended to contribute to Goal 14 of the UN Sustainable Development Goals that encourages people to work towards the improvement of marine ecosystems.</Accordion>
       </div>
 
