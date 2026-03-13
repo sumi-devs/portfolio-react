@@ -42,7 +42,7 @@ function Academics() {
           &gt; Decentralized Network: No single point of control, ensuring censorship resistance. <br />
           &gt; Real-time Interactions: Powered by Socket.io for instant notifications and updates. <br />
           &gt; Trusted Server Mesh: Secure and verified connections between network nodes.
-          <br />
+          <br /><br />
           <span className="aboutspan">Techstack</span>
           <br /><br />
           <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
@@ -126,7 +126,7 @@ function Academics() {
           &gt; Log your activity. <br />
           &gt; Rate your watches. <br />
           &gt; Add media to your watchlist. <br />
-          <br /><br />
+          <br />
           <span className="aboutspan">Techstack</span>
           <br /><br />
           <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"
