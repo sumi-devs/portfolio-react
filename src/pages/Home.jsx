@@ -16,11 +16,11 @@ function Home() {
 
       <section data-floor="3" data-floor-label="Intro">
         <div className="grid-container">
-          {'HI GUYS, MY NAME IS SUMITHRA'.split('').map((c, i) => <Letter key={i} char={c} />)}
+          {'HI, MY NAME IS SUMITHRA.'.split('').map((c, i) => <Letter key={i} char={c} />)}
         </div>
 
         <div className="grid-container2">
-          {'AND WELCOME TO MY PORTFOLIO!'.split('').map((c, i) => <Letter key={i} char={c} />)}
+          {'WELCOME TO MY PORTFOLIO!'.split('').map((c, i) => <Letter key={i} char={c} />)}
         </div>
 
         <div className="intro">
