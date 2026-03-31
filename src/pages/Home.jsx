@@ -3,12 +3,19 @@ import Letter from '../components/Letter';
 import '../assets/css/portfolio.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
+import ThemeContext, { themes, defaultColors } from '../context/ThemeContext';
 
 function Home() {
+  const { currentTheme } = useContext(ThemeContext);
+  
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const activeTheme = currentTheme === -1 ? defaultColors : themes[currentTheme];
+  const accentHex = activeTheme.accent.replace('#', '');
+  const textHex = activeTheme.text.replace('#', '');
 
   return (
     <>
@@ -83,7 +90,7 @@ function Home() {
       </section>
 
       <section data-floor="1" data-floor-label="Techstack">
-        <div class="tech-stack">
+        <div className="tech-stack">
           <h2>TECHSTACK</h2>
 
           <br /><br />
@@ -126,6 +133,22 @@ function Home() {
               alt="Flutter" className="tech" />
             <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"
               alt="Dart" className="tech" />
+          </div>
+
+          <hr className="tech-stats-divider" />
+          
+          <h2 className="github-stats-title">GITHUB STATS</h2>
+          <div className="github-stats">
+            <img
+              src={`https://github-readme-streak-stats.herokuapp.com/?user=sumi-devs&theme=tokyonight&hide_border=true&background=00000000&ring=${accentHex}&fire=${accentHex}&currStreakLabel=${textHex}&sideLabels=${textHex}&currStreakNum=${textHex}&sideNums=${textHex}&dates=${textHex}`}
+              alt="GitHub Streak"
+              className="github-stat-card"
+            />
+            <img
+              src={`https://ghchart.rshah.org/${accentHex}/sumi-devs`}
+              alt="GitHub Contributions"
+              className="github-stat-card github-heatmap"
+            />
           </div>
         </div>
       </section>

@@ -4,7 +4,14 @@ const ThemeContext = createContext();
 
 const THEME_KEY = 'themeIndex';
 
-const themes = [
+export const defaultColors = {
+  background: '#e6e1c9',
+  text: '#0f0f0f',
+  accent: '#f71e95', // Used in portfolio.css as default hover colour
+  highlight: '#ff2888fc',
+};
+
+export const themes = [
   // cherry blossom
   {
     lines: 'linear-gradient(#F2AEBC30 1px, transparent 1px), linear-gradient(90deg, #F2AEBC30 1px, transparent 1px)',

@@ -314,6 +314,46 @@ nav a {
     flex-wrap: wrap;
 }
 
+.github-stats {
+    display: flex;
+    gap: clamp(10px, 2vw, 20px);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tech-stats-divider {
+    border: none;
+    border-top: 1px solid #0f0f0f;
+    margin-left: calc(-1 * clamp(10px, 1.5vw, 20px));
+    margin-right: calc(-1 * clamp(10px, 1.5vw, 20px));
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.github-stats-title {
+    margin-bottom: 1.5rem;
+}
+
+.github-stat-card {
+    height: auto;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.github-stat-card:first-child {
+    width: clamp(280px, 28vw, 380px);
+}
+
+.github-heatmap {
+    flex: 1;
+    min-width: 280px;
+    mix-blend-mode: multiply;
+}
+
+.github-stat-card:hover {
+    transform: scale(1.03);
+}
+
 footer {
     color: var(--text, #0f0f0f);
     text-align: center;
