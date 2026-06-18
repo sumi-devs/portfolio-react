@@ -35,8 +35,6 @@ function Home() {
             <p>
               I am currently a <span className="aboutspan">Computer Science and Engineering</span> undergraduate student.
               <br /><br />
-              My interests lie in <span className="aboutspan">full-stack development and mobile app development</span> — I particularly enjoy designing user-friendly and creative interfaces and bringing ideas to life through front-end work (Psst! Try mousing over the letters above and using the <span className="colourspan">Colours</span> feature in the menu).
-              <br /><br />
               I consider myself a quick and curious learner, always eager to dive deep into new topics and build projects that are both innovative and fun.
               <br /><br />
               I enjoy working on projects that sit at the intersection of design and technology, where thoughtful structure, clean visuals, and intuitive interactions matter as much as functionality.
@@ -47,9 +45,7 @@ function Home() {
             <p>
               Outside the world of computer science, I find joy in <span className="aboutspan">reading books</span> and <span className="aboutspan">watching movies</span>. I'm always on the lookout for a good story, whether it's through pages or on screen.
               <br /><br />
-              I particularly enjoy the works of Toni Morrison, Han Kang, Park Chan Wook, Adoor Gopalakrishnan, and David Fincher to name a few. I also love spending time <span className="aboutspan">drawing</span> and <span className="aboutspan">crocheting</span>, activities that let me slow down and create with my hands.
-              <br /><br />
-              If you have a favorite book or film, I'd love to hear about it — let's share recommendations and discover new favorites together!
+              You can find me on <a href="https://letterboxd.com/notsumi/" target="_blank" rel="noopener noreferrer">Letterboxd</a>, <a href="https://app.thestorygraph.com/profile/notsumi" target="_blank" rel="noopener noreferrer">Stroygraph</a> and <a href="https://www.serializd.com/user/notsumi/profile" target="_blank" rel="noopener noreferrer">Serializd</a>.
             </p>
             <a href="/contact">
               <div className="button">SOCIALS</div>
