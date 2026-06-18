@@ -36,20 +36,20 @@ function Home() {
               I am currently a <span className="aboutspan">Computer Science and Engineering</span> undergraduate student.
               <br /><br />
               I consider myself a quick and curious learner, always eager to dive deep into new topics and build projects that are both innovative and fun.
-              <br /><br />
-              I enjoy working on projects that sit at the intersection of design and technology, where thoughtful structure, clean visuals, and intuitive interactions matter as much as functionality.
+              <br /><br />         
+              My interests include web development, mobile app development, data science and machine learning.     
             </p>
           </div>
 
           <div className="personal">
             <p>
-              Outside the world of computer science, I find joy in <span className="aboutspan">reading books</span> and <span className="aboutspan">watching movies</span>. I'm always on the lookout for a good story, whether it's through pages or on screen.
+              Outside the world of computer science, I find joy in <span className="aboutspan">reading books</span> and <span className="aboutspan">watching movies</span>.
+              <br /><br />
+              I enjoy media of all languages and genres but I will always be partial to all kinds of horror, speculative fiction, character dramas, the works of Park Chan-wook and themes of vengeance & obession.
               <br /><br />
               You can find me on <a href="https://letterboxd.com/notsumi/" target="_blank" rel="noopener noreferrer">Letterboxd</a>, <a href="https://app.thestorygraph.com/profile/notsumi" target="_blank" rel="noopener noreferrer">Stroygraph</a> and <a href="https://www.serializd.com/user/notsumi/profile" target="_blank" rel="noopener noreferrer">Serializd</a>.
+              
             </p>
-            <a href="/contact">
-              <div className="button">SOCIALS</div>
-            </a>
           </div>
         </div>
       </section>
