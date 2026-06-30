@@ -8,7 +8,7 @@ import ThemeContext, { themes, defaultColors } from '../context/ThemeContext';
 
 function Home() {
   const { currentTheme } = useContext(ThemeContext);
-  
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -36,8 +36,8 @@ function Home() {
               I am currently a <span className="aboutspan">Computer Science and Engineering</span> undergraduate student.
               <br /><br />
               I consider myself a quick and curious learner, always eager to dive deep into new topics and build projects that are both innovative and fun.
-              <br /><br />         
-              My interests include web development, mobile app development, data science and machine learning.     
+              <br /><br />
+              My interests include web development, mobile app development, data science and machine learning.
             </p>
           </div>
 
@@ -47,8 +47,8 @@ function Home() {
               <br /><br />
               I enjoy media of all languages and genres but I will always be partial to all kinds of horror, speculative fiction, character dramas, the works of Park Chan-wook and themes of vengeance & obession.
               <br /><br />
-              You can find me on <a href="https://letterboxd.com/notsumi/" target="_blank" rel="noopener noreferrer">Letterboxd</a>, <a href="https://app.thestorygraph.com/profile/notsumi" target="_blank" rel="noopener noreferrer">Stroygraph</a> and <a href="https://www.serializd.com/user/notsumi/profile" target="_blank" rel="noopener noreferrer">Serializd</a>.
-              
+              You can find me on <a href="https://letterboxd.com/notsumi/" target="_blank" rel="noopener noreferrer">Letterboxd</a>, <a href="https://app.thestorygraph.com/profile/notsumi" target="_blank" rel="noopener noreferrer">Storygraph</a> and <a href="https://www.serializd.com/user/notsumi/profile" target="_blank" rel="noopener noreferrer">Serializd</a>.
+
             </p>
           </div>
         </div>
@@ -132,7 +132,7 @@ function Home() {
           </div>
 
           <hr className="tech-stats-divider" />
-          
+
           <h2 className="github-stats-title">GITHUB STATS</h2>
           <div className="github-stats">
             <img
